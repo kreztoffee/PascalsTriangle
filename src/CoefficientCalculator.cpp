@@ -6,7 +6,7 @@ std::vector<long> CoefficientCalculator::calculate(int terms) {
 		return currentCoefficients;
 	}
 
-	std::vector<long> previousCoefficients(1, 1);
+	std::vector<long> previousCoefficients{1};
 	for (int i = 1; i <= terms; ++i) {
 		currentCoefficients.clear();
 		for (int j = 0; j < i; ++j) {

@@ -27,7 +27,9 @@ target_include_directories(PascalsTriangle PRIVATE
 enable_testing()
 add_executable(PascalsTriangleTest)
 target_sources(PascalsTriangleTest PRIVATE
-        test/main.cpp)
+        test/main.cpp
+        test/CoefficientCalculatorTest.cpp
+        src/CoefficientCalculator.cpp)
 target_include_directories(PascalsTriangleTest PRIVATE
         ${PROJECT_SOURCE_DIR}/include
         ${PROJECT_SOURCE_DIR}/test)
